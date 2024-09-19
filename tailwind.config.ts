@@ -35,6 +35,7 @@ module.exports = {
         "gallery-img-3": "url('/udvar2.jpg')",
         "gallery-img-4": "url('/udvar3.jpg')",
         "gallery-img-5": "url('/tornac.jpg')",
+        "gallery-img-5_2": "url('/tornac2.webp')",
         "gallery-img-6": "url('/virag.jpg')",
         "gallery-img-7": "url('/belso.jpg')",
         "gallery-img-8": "url('/belso2.jpg')",
@@ -46,7 +47,8 @@ module.exports = {
         "gallery-img-14": "url('/belso8.jpg')",
         "gallery-img-15": "url('/belso9.jpg')",
         "gallery-img-16": "url('/belso10.jpg')",
-
+        "gallery-img-17": "url('/belso11.jpg')",
+        "gallery-img-18": "url('/belso12.jpg')",
         "bg-img-2": "url('/img-2.png')",
         "feature-bg": "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
