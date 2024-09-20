@@ -1,5 +1,5 @@
 "use client";
-import { GALERY, PEOPLE_URL } from "@/constants";
+import { GALLERY } from "@/constants";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "./Button";
@@ -36,7 +36,7 @@ const GaleryImages = ({ images }: ImageSliderProps) => {
   return (
     <>
       <div
-        className={`h-full w-2/3 max-w-[1100px] min-w-[300px] bg-cover bg-center bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl ${images[currentSlide].backgroundImage}`}
+        className={`h-full 2xl:w-full xl:w-full 2xl:max-w-[1100px] min-w-[300px] bg-cover bg-center bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl ${images[currentSlide].backgroundImage}`}
       >
         <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
           <div className="flexCenter gap-4">
@@ -58,6 +58,7 @@ const GaleryImages = ({ images }: ImageSliderProps) => {
               </p>
             </div>
           </div>
+          {/*TODO: move it to component */}
           <div className="flex items-center justify-between w-full">
             {/* Previous Button */}
             <button
@@ -88,13 +89,13 @@ const GaleryImages = ({ images }: ImageSliderProps) => {
   );
 };
 
-const Galery = () => {
-  const galery = GALERY;
+const Gallery = () => {
+  const gallery = GALLERY;
 
   return (
     <section className="2xl:max-container relative flex flex-col pb-10 lg:mb-10 lg:pb-20 xl:mb-20">
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-center gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
-        <GaleryImages images={galery} />
+        <GaleryImages images={gallery} />
       </div>
 
       <div className="mt-10 px-6 w-full">
@@ -124,4 +125,4 @@ const Galery = () => {
   );
 };
 
-export default Galery;
+export default Gallery;

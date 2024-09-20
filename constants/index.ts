@@ -7,16 +7,8 @@ export const NAV_LINKS = [
   { href: "/", key: "árak", label: "Árak" },
 ];
 
-// CAMP SECTION
-export const PEOPLE_URL = [
-  "/person-1.png",
-  "/person-2.png",
-  "/person-3.png",
-  "/person-4.png",
-];
-
-// GALERY
-export const GALERY = [
+// GALLERY
+export const GALLERY = [
   {
     backgroundImage: "bg-gallery-img-1",
     title: "Udvar",
@@ -99,6 +91,66 @@ export const GALERY = [
   {
     backgroundImage: "bg-gallery-img-18",
     title: "Belső, szoba",
+  },
+];
+
+//GUIDE SECTION
+export const GUIDES = [
+  {
+    name: "Mofetta",
+    distance: "200 m",
+    backgroundImage: "bg-guide-img-1",
+    description:
+      "fasfasjlkajlfjaslfkjsalkjlajaskjlsfkjsafklasjaslfjaslkjasklskfalsjkfaslfjkasfksajklasfjaklsfjasfasklfjasfasfasflkjasjjasfjkals",
+  },
+  {
+    name: "Siroki vár",
+    distance: "15 km",
+    backgroundImage: "bg-guide-img-2",
+    description:
+      "fasfasjlkajlfjaslfkjsalkjlajaskjlsfkjsafklasjaslfjaslkjasklskfalsjkfaslfjkasfksajklasfjaklsfjasfasklfjasfasfasflkjasjjasfjkals",
+  },
+  {
+    name: "Ilona-völgyi vízesés",
+    distance: "18 km",
+    backgroundImage: "bg-guide-img-3",
+    description:
+      "fasfasjlkajlfjaslfkjsalkjlajaskjlsfkjsafklasjaslfjaslkjasklskfalsjkfaslfjkasfksajklasfjaklsfjasfasklfjasfasfasflkjasjjasfjkals",
+  },
+  {
+    name: "Bükkszékfürdő strand",
+    distance: "20 km",
+    backgroundImage: "bg-guide-img-4",
+    description:
+      "fasfasjlkajlfjaslfkjsalkjlajaskjlsfkjsafklasjaslfjaslkjasklskfalsjkfaslfjkasfksajklasfjaklsfjasfasklfjasfasfasflkjasjjasfjkals",
+  },
+  {
+    name: "Oxygen Adrenalin Kalandpark",
+    distance: "27 km",
+    backgroundImage: "bg-guide-img-8",
+    description:
+      "fasfasjlkajlfjaslfkjsalkjlajaskjlsfkjsafklasjaslfjaslkjasklskfalsjkfaslfjkasfksajklasfjaklsfjasfasklfjasfasfasflkjasjjasfjkals",
+  },
+  {
+    name: "Csörgő szurdok",
+    distance: "35 km",
+    backgroundImage: "bg-guide-img-5",
+    description:
+      "fasfasjlkajlfjaslfkjsalkjlajaskjlsfkjsafklasjaslfjaslkjasklskfalsjkfaslfjkasfksajklasfjaklsfjasfasklfjasfasfasflkjasjjasfjkals",
+  },
+  {
+    name: "Kékes",
+    distance: "35 km",
+    backgroundImage: "bg-guide-img-6",
+    description:
+      "fasfasjlkajlfjaslfkjsalkjlajaskjlsfkjsafklasjaslfjaslkjasklskfalsjkfaslfjkasfksajklasfjaklsfjasfasklfjasfasfasflkjasjjasfjkals",
+  },
+  {
+    name: "Ágasvár",
+    distance: "40 km",
+    backgroundImage: "bg-guide-img-7",
+    description:
+      "fasfasjlkajlfjaslfkjsalkjlajaskjlsfkjsafklasjaslfjaslkjasklskfalsjkfaslfjkasfksajklasfjaklsfjasfasklfjasfasfasflkjasjjasfjkals",
   },
 ];
 
