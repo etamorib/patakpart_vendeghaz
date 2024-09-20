@@ -49,6 +49,16 @@ module.exports = {
         "gallery-img-16": "url('/belso10.jpg')",
         "gallery-img-17": "url('/belso11.jpg')",
         "gallery-img-18": "url('/belso12.jpg')",
+
+        "guide-img-1": "urL('/mofetta.jpg')",
+        "guide-img-2": "urL('/siroki-var.jpg')",
+        "guide-img-3": "urL('/ilona-volgyi-vizeses.jpg')",
+        "guide-img-4": "urL('/bukkszekfurdo-strand.jpg')",
+        "guide-img-5": "urL('/csorgo-szurdok.jpg')",
+        "guide-img-6": "urL('/kekes.jpg')",
+        "guide-img-7": "urL('/agasvar.jpg')",
+        "guide-img-8": "urL('/oxygen.jpg')",
+
         "bg-img-2": "url('/img-2.png')",
         "feature-bg": "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
@@ -71,7 +81,7 @@ module.exports = {
   plugins: [],
   purge: {
     options: {
-      safelist: [{ pattern: /bg-gallery-img./ }],
+      safelist: [{ pattern: /bg-gallery-img./ }, { pattern: /bg-guide-img./ }],
     },
   },
 };
