@@ -16,7 +16,7 @@ const Modal = ({
   onPrevious,
   onNext,
 }: ModalProps) => {
-  const modalRef = useRef(null);
+  const modalRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     const handleKeyDown = (event: { key: string }) => {
       if (event.key === "Escape") {
@@ -32,7 +32,10 @@ const Modal = ({
 
   useEffect(() => {
     const handleClickOutside = (event: { target: any }) => {
-      if (modalRef.current && !modalRef.current.contains(event.target)) {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
         onClose();
       }
     };
