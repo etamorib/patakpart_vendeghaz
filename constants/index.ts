@@ -1,9 +1,13 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "főoldal", label: "Főoldal" },
-  { href: "/", key: "bemutatkozás", label: "Bemutatkozás" },
-  { href: "/", key: "galéria", label: "Galéria" },
-  { href: "/", key: "látnivalók", label: "Látnivalók " },
+  {
+    href: "/booking-information",
+    key: "foglalási-információk",
+    label: "Foglalási információk",
+  },
+  { href: "/#gallery", key: "galéria", label: "Galéria" },
+  { href: "/#guide", key: "látnivalók", label: "Látnivalók " },
   { href: "/", key: "árak", label: "Árak" },
 ];
 
