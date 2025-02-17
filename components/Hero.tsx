@@ -1,7 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./Button";
+import { EXTERNAL_LINKS } from "@/constants";
 
 const Hero = () => {
+  const openInNewTab =
+    (url: string) => (event: React.MouseEvent<HTMLButtonElement>) => {
+      event.preventDefault(); // Prevents any default behavior if necessary
+      window.open(url, "_blank", "noreferrer");
+    };
+
   return (
     <section className="w-full bg-cover bg-center bg-no-repeat bg-pattern-2 max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row mt-10">
       {/* <div className="hero-map" /> */}
@@ -22,14 +31,10 @@ const Hero = () => {
             <div className="flex flex-col w-full gap-3 sm:flex-row">
               <Button
                 type="button"
-                title="Bemutatkozás"
-                variant="btn_white_text"
-              />
-              <Button
-                type="button"
                 title="Elhelyezkedés"
                 icon="/map.svg"
-                variant="btn_green"
+                variant="btn_green cursor-pointer btn_animation"
+                functionality={openInNewTab(EXTERNAL_LINKS.direction)}
               />
             </div>
           </div>

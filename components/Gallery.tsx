@@ -111,10 +111,14 @@ const Gallery = () => {
             height={219}
             className="camp-quote"
           />
-          <div
-            className="hidden lg:flex lg:absolute lg:top-4 lg:right-4"
-            onClick={() => console.log("asdasd")}
-          ></div>
+        </div>
+      </div>
+      <div className="padding-container max-container w-full pb-6">
+        <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">Galéria</p>
+        <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
+          <h2 className="bold-40 lg:bold-50 xl:max-w-[390px]">
+            Néhány kép a szállásról
+          </h2>
         </div>
       </div>
       <section className="2xl:max-container relative flex flex-col pb-10 lg:mb-10 lg:pb-20 xl:mb-20">

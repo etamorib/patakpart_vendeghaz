@@ -8,8 +8,12 @@ export const NAV_LINKS = [
   },
   { href: "/#gallery", key: "galéria", label: "Galéria" },
   { href: "/#guide", key: "látnivalók", label: "Látnivalók " },
-  { href: "/", key: "árak", label: "Árak" },
+  { href: "/#features", key: "részletek", label: "Részletek" },
 ];
+
+export const EXTERNAL_LINKS = {
+  direction: "https://maps.app.goo.gl/NTZuCVKRgqDrAXtX7",
+};
 
 // GALLERY
 export const GALLERY = [
@@ -196,17 +200,22 @@ export const FOOTER_LINKS = [
     links: [
       {
         address: "3246 Mátraderecske, Almáskút 2.",
-        map: "http://maps.google.com/?q=Almáskút utca 2 Mátraderecske",
+        map: "https://maps.app.goo.gl/StJhsn9xbYwenGsR7",
       },
     ],
   },
 ];
 
+export const CONTACT = {
+  email: "farkascsekemercedesz[kukac]gmail.com",
+  tel: "06 30 5711859",
+};
+
 export const FOOTER_CONTACT_INFO = {
   title: "Elérhetőségek",
   links: [
-    { label: "Telefonszám", value: "123-456-7890" },
-    { label: "Email cím", value: "xxxxx@valamivalami.valami" },
+    { label: "Telefonszám", value: CONTACT.tel },
+    { label: "Email cím", value: CONTACT.email },
   ],
 };
 

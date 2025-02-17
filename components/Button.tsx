@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { MouseEventHandler } from "react";
 
 type ButtonProps = {
   type: "button" | "submit";
@@ -6,7 +9,7 @@ type ButtonProps = {
   icon?: string;
   variant: string;
   full?: boolean;
-  functionality?: () => void;
+  functionality?: MouseEventHandler;
 };
 
 const Button = ({
