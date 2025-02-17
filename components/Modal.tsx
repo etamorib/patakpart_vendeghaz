@@ -1,10 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import { Transition } from "@headlessui/react"; // For smooth transitions
 
-const Modal = ({ isOpen, onClose, currentImage, onPrevious, onNext }) => {
+type ModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
+  currentImage: any;
+  onPrevious: any;
+  onNext: any;
+};
+
+const Modal = ({
+  isOpen,
+  onClose,
+  currentImage,
+  onPrevious,
+  onNext,
+}: ModalProps) => {
   const modalRef = useRef(null);
   useEffect(() => {
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event: { key: string }) => {
       if (event.key === "Escape") {
         onClose();
       }
@@ -17,7 +31,7 @@ const Modal = ({ isOpen, onClose, currentImage, onPrevious, onNext }) => {
   }, [onClose]);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = (event: { target: any }) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         onClose();
       }
