@@ -36,11 +36,15 @@ body {
   }
 
   .btn_full_screen {
-    @apply text-white bg-black bg-opacity-50 border-none rounded-full transform transition-transform duration-200 hover:scale-105 w-12 h-12;
+    @apply text-white bg-black bg-opacity-50 border-none rounded-xl transform transition-transform duration-200 hover:scale-105 w-12 h-12 hover:bg-opacity-90;
   }
 
   .btn_prev_next {
     @apply text-white bg-black bg-opacity-50 border-none rounded-full transform transition-transform duration-200 hover:scale-105 w-12 h-12 hover:bg-opacity-90;
+  }
+
+  .btn_animation {
+    @apply transform transition-transform duration-200 hover:scale-105;
   }
 
   .max-container {
