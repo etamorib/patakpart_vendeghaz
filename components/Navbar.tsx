@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [fill, setFill] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const handleScroll = () => {
     if (window.scrollY > 80) {
       setFill(true);
@@ -24,48 +25,75 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navFlex max-container pl-10 pr-10 fixed z-50 py-5 ${
+      className={`navFlex max-container pl-10 pr-10 fixed z-50 py-5 flex items-center ${
         fill && "bg-white"
       }`}
     >
+      {/* Logo (Aligned Left) */}
       <Link href="/">
         <Image
           src="/start.png"
           alt="logo"
           width={74}
           height={29}
-          className="inline-block cursor-pointer"
+          className="cursor-pointer"
         />
       </Link>
 
-      <ul className="hidden h-full gap-12 lg:flex">
+      {/* Navigation Links (Centered) */}
+      <ul className="hidden gap-12 lg:flex ml-auto mr-auto">
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}
             key={link.key}
-            className="font-bold flexCenter cursor-pointer pb-1.5 transition-all nav-item relative"
+            className="font-bold cursor-pointer pb-1.5 transition-all nav-item relative"
           >
             {link.label}
           </Link>
         ))}
       </ul>
 
-      <div className="lg:flexCenter hidden">
-        <Button
-          type="button"
-          title="Foglalás"
-          icon="/calendar.svg"
-          variant="btn_dark_green"
+      {/* Mobile Menu Icon (Keeps Right Alignment) */}
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="lg:hidden ml-auto"
+      >
+        <Image
+          src="/menu.svg"
+          alt="menu"
+          width={32}
+          height={32}
+          className="cursor-pointer"
         />
-      </div>
+      </button>
+      {/* Mobile Menu (Slide-in from Right) */}
+      <div
+        className={`fixed top-0 right-0 min-h-screen w-1/2 h-full bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Close Button */}
+        <button
+          onClick={() => setMenuOpen(false)}
+          className="absolute top-6 right-6"
+        >
+          <Image src="/close1.svg" alt="close" width={32} height={32} />
+        </button>
 
-      <Image
-        src="menu.svg"
-        alt="menu"
-        width={32}
-        height={32}
-        className="inline-block cursor-pointer lg:hidden"
-      />
+        {/* Menu Items */}
+        <ul className="flex flex-col gap-5 p-10">
+          {NAV_LINKS.map((link) => (
+            <Link
+              href={link.href}
+              key={link.key}
+              className="font-bold cursor-pointer pb-1.5 transition-all nav-item w-max"
+              onClick={() => setMenuOpen(false)} // Close menu on click
+            >
+              {link.label}
+            </Link>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 };

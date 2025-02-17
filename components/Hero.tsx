@@ -3,8 +3,8 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row mt-10">
-      <div className="hero-map" />
+    <section className="w-full bg-cover bg-center bg-no-repeat bg-pattern-2 max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row mt-10">
+      {/* <div className="hero-map" /> */}
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <h1 className="bold-40 lg:bold-60">
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative flex flex-1 items-start">
+      {/*       <div className="relative flex flex-1 items-start">
         <div className="relative z-20 flex w-[268px] flex-col gap-8 rounded-3xl bg-green-90 px-7 py-8">
           <div className="flex flex-col">
             <div className="flexBetween z-20">
@@ -67,7 +67,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -6,10 +6,18 @@ import Hero from "@/components/Hero";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Gallery />
-      <Guide />
-      <Features />
+      <div id="hero-map">
+        <Hero />
+      </div>
+      <div id="gallery">
+        <Gallery />
+      </div>
+      <div id="guide">
+        <Guide />
+      </div>
+      <div id="features">
+        <Features />
+      </div>
     </>
   );
 }

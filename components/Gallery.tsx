@@ -36,7 +36,7 @@ const GaleryImages = ({ images }: ImageSliderProps) => {
   return (
     <>
       <div
-        className={`h-full 2xl:w-full xl:w-full 2xl:max-w-[1100px] min-w-[300px] bg-cover bg-center bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl ${images[currentSlide].backgroundImage}`}
+        className={`overflow-hidden ml-3 mr-3 h-full w-full min-w-[300px] bg-cover bg-center bg-no-repeat rounded-r-5xl 2xl:rounded-5xl ${images[currentSlide].backgroundImage}`}
       >
         <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
           <div className="flexCenter gap-4">
@@ -93,13 +93,9 @@ const Gallery = () => {
   const gallery = GALLERY;
 
   return (
-    <section className="2xl:max-container relative flex flex-col pb-10 lg:mb-10 lg:pb-20 xl:mb-20">
-      <div className="hide-scrollbar flex h-[340px] w-full items-start justify-center gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
-        <GaleryImages images={gallery} />
-      </div>
-
-      <div className="mt-10 px-6 w-full">
-        <div className="relative w-full overflow-hidden rounded-3xl bg-green-50 p-8 xl:rounded-5xl xl:px-16 xl:py-20">
+    <>
+      <div className="mt-10 mb-10 px-6 w-full">
+        <div className="relative w-full overflow-hidden rounded-3xl bg-green-90 p-8 xl:rounded-5xl xl:px-16 xl:py-20">
           <h2 className="regular-24 md:regular-32 2xl:regular-50 capitalize text-white">
             <strong> Családok, párok, barátok</strong> számára ideális környezet
           </h2>
@@ -121,7 +117,12 @@ const Gallery = () => {
           ></div>
         </div>
       </div>
-    </section>
+      <section className="2xl:max-container relative flex flex-col pb-10 lg:mb-10 lg:pb-20 xl:mb-20">
+        <div className="hide-scrollbar flex h-[340px] w-full items-start justify-center gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
+          <GaleryImages images={gallery} />
+        </div>
+      </section>
+    </>
   );
 };
 

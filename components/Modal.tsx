@@ -28,7 +28,12 @@ const Modal = ({ isOpen, onClose, currentImage, onPrevious, onNext }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [onClose]);
-  if (!isOpen) return null;
+  if (!isOpen) {
+    document.body.style.overflow = "auto";
+  }
+  if (isOpen) {
+    document.body.style.overflow = "hidden";
+  }
 
   return (
     <Transition
