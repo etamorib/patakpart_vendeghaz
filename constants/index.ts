@@ -206,11 +206,16 @@ export const FOOTER_LINKS = [
   },
 ];
 
+export const CONTACT = {
+  email: "farkascsekemercedesz[kukac]gmail.com",
+  tel: "06 30 5711859",
+};
+
 export const FOOTER_CONTACT_INFO = {
   title: "Elérhetőségek",
   links: [
-    { label: "Telefonszám", value: "123-456-7890" },
-    { label: "Email cím", value: "xxxxx@valamivalami.valami" },
+    { label: "Telefonszám", value: CONTACT.tel },
+    { label: "Email cím", value: CONTACT.email },
   ],
 };
 
