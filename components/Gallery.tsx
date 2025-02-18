@@ -45,7 +45,7 @@ const GaleryImages = ({ images }: ImageSliderProps) => {
               <Button
                 type="button"
                 title=""
-                icon="/fullscreen.svg"
+                icon={`${prefix}/fullscreen.svg`}
                 variant="btn_full_screen"
                 functionality={openModal}
               />
