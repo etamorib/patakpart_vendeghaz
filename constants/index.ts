@@ -1,3 +1,5 @@
+import { prefix } from "./prefix";
+
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "főoldal", label: "Főoldal" },
@@ -166,27 +168,27 @@ export const GUIDES = [
 export const FEATURES = [
   {
     title: "Parkolás",
-    icon: "/parking.svg",
+    icon: `${prefix}/parking.svg`,
     variant: "green",
     description: "A parkolás több autóval is megoldható, udvaron belül.",
   },
   {
     title: "Szobák felszereltsége",
-    icon: "/rooms.svg",
+    icon: `${prefix}/rooms.svg`,
     variant: "green",
     description:
       "Két különálló szobánk van, a nagyobb szobában 3 db ágy található ( ebből 2 franciaágyként összetolva kétszemélyes ágyként használható ) és 1 db külön álló ágy. A másik szobában szintén 2 összetolt ágy található kényelmes matracokkal. Plédek, könyvek, társasjáték, szintén a vendégek rendelkezésére állnak.",
   },
   {
     title: "Konyha felszereltsége",
-    icon: "/kitchen.svg",
+    icon: `${prefix}/kitchen.svg`,
     variant: "green",
     description:
       "A konyhában megtalálható gáztűzhely, hűtőszekrény mélyhűtő résszel, mikrohullámú sütő, kenyérpirító, szendvicssütő, vízforraló, kávéfőző",
   },
   {
     title: "Kert",
-    icon: "/garden.svg",
+    icon: `${prefix}/garden.svg`,
     variant: "orange",
     description:
       "Lehetőség van bográcsozásra, szalonnasütésre, melyhez minden eszközt biztosítani tudunk. (például: nyárs, fa)",
@@ -223,7 +225,7 @@ export const SOCIALS = {
   title: "Egyéb",
   links: [
     {
-      image: "/facebook.svg",
+      image: `${prefix}/facebook.svg`,
       url: "https://www.facebook.com/profile.php?id=61550635649248",
     },
   ],

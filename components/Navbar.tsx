@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 import { useEffect, useState } from "react";
+import { prefix } from "@/constants/prefix";
 
 const Navbar = () => {
   const [fill, setFill] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
       {/* Logo (Aligned Left) */}
       <Link href="/">
         <Image
-          src="/start.png"
+          src={`${prefix}/start.png`}
           alt="logo"
           width={74}
           height={29}
@@ -59,7 +60,7 @@ const Navbar = () => {
         className="lg:hidden ml-auto"
       >
         <Image
-          src="/menu.svg"
+          src={`${prefix}/menu.svg`}
           alt="menu"
           width={32}
           height={32}
@@ -77,7 +78,12 @@ const Navbar = () => {
           onClick={() => setMenuOpen(false)}
           className="absolute top-6 right-6"
         >
-          <Image src="/close1.svg" alt="close" width={32} height={32} />
+          <Image
+            src={`${prefix}/close1.svg`}
+            alt="close"
+            width={32}
+            height={32}
+          />
         </button>
 
         {/* Menu Items */}

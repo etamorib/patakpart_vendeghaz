@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Button from "./Button";
 import Modal from "./Modal";
+import { prefix } from "@/constants/prefix";
 
 interface ImageProps {
   backgroundImage: string;
@@ -105,8 +106,8 @@ const Gallery = () => {
             segít megpihenni, feltöltődni, kikapcsolódni.
           </p>
           <Image
-            src="/quote.svg"
-            alt="camp-2"
+            src={`${prefix}/quote.svg`}
+            alt="quote"
             width={186}
             height={219}
             className="camp-quote"
