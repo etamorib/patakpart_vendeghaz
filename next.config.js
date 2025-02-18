@@ -8,9 +8,9 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: isProd ? '/patakpart_vendeghaz/' : '',
+  assetPrefix: isProd ? '/patakpart_vendeghaz' : '',
   basePath: isProd ? '/patakpart_vendeghaz' : '',
-  output: 'export'
+  trailingSlash: true
 }
 
 module.exports = nextConfig
