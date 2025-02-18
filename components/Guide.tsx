@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { GUIDES } from "@/constants";
+import { prefix } from "@/constants/prefix";
 
 interface GuideProps {
   name: string;
@@ -44,7 +45,7 @@ const GuideSlide = ({ guides }: GuideSlideProps) => {
 
         <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
           <Image
-            src="/meter.svg"
+            src={`${prefix}/meter.svg`}
             alt="meter"
             width={16}
             height={158}

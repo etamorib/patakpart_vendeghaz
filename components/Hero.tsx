@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Button from "./Button";
 import { EXTERNAL_LINKS } from "@/constants";
+import { prefix } from "@/constants/prefix";
 
 const Hero = () => {
   const openInNewTab =
@@ -32,7 +33,7 @@ const Hero = () => {
               <Button
                 type="button"
                 title="Elhelyezkedés"
-                icon="/map.svg"
+                icon={`${prefix}/map.svg`}
                 variant="btn_green cursor-pointer btn_animation"
                 functionality={openInNewTab(EXTERNAL_LINKS.direction)}
               />

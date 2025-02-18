@@ -45,12 +45,21 @@ const Modal = ({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [onClose]);
-  if (!isOpen) {
-    document.body.style.overflow = "auto";
-  }
-  if (isOpen) {
-    document.body.style.overflow = "hidden";
-  }
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (isOpen) {
+        document.body.style.overflow = "hidden"; // Disable scrolling
+      } else {
+        document.body.style.overflow = "auto"; // Enable scrolling
+      }
+    }
+
+    // Clean up the effect when the component is unmounted or isOpen changes
+    return () => {
+      document.body.style.overflow = "auto"; // Reset on modal close
+    };
+  }, [isOpen]);
 
   return (
     <Transition

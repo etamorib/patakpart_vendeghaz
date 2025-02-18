@@ -6,13 +6,14 @@
   "scripts": {
     "dev": "next dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run build && echo > ./out/.nojekyll && gh-pages -d out --nojekyll",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@headlessui/react": "^2.1.6",
+    "dotenv": "^16.4.7",
     "next": "^14.2.5",
     "react": "^18",
     "react-dom": "^18",
