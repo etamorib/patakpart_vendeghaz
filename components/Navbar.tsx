@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav
       className={`navFlex max-container pl-10 pr-10 fixed z-50 py-5 flex items-center ${
-        fill && "bg-white"
+        fill && "bg-green-50"
       }`}
     >
       {/* Logo (Aligned Left) */}
@@ -47,7 +47,9 @@ const Navbar = () => {
           <Link
             href={link.href}
             key={link.key}
-            className="font-bold cursor-pointer pb-1.5 transition-all nav-item relative"
+            className={`font-bold cursor-pointer pb-1.5 transition-all nav-item-dark relative ${
+              fill && "nav-item-white"
+            }`}
           >
             {link.label}
           </Link>
@@ -79,7 +81,7 @@ const Navbar = () => {
           className="absolute top-6 right-6"
         >
           <Image
-            src={`${prefix}/close1.svg`}
+            src={`${prefix}/close.svg`}
             alt="close"
             width={32}
             height={32}
@@ -92,7 +94,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={link.key}
-              className="font-bold cursor-pointer pb-1.5 transition-all nav-item w-max"
+              className={`font-bold cursor-pointer pb-1.5 transition-all nav-item-white w-max`}
               onClick={() => setMenuOpen(false)} // Close menu on click
             >
               {link.label}

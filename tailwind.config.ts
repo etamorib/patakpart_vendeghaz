@@ -1,4 +1,4 @@
-let pfx = "/patakpart_vendeghaz";
+let pfx = "";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -38,19 +38,13 @@ module.exports = {
         "gallery-img-4": `url('${pfx}/udvar3.jpg')`,
         "gallery-img-5": `url('${pfx}/tornac.jpg')`,
         "gallery-img-5_2": `url('${pfx}/tornac2.webp')`,
+        "gallery-img-5_3": `url('${pfx}/tornac3.jpg')`,
         "gallery-img-6": `url('${pfx}/virag.jpg')`,
         "gallery-img-7": `url('${pfx}/belso.jpg')`,
         "gallery-img-8": `url('${pfx}/belso2.jpg')`,
         "gallery-img-9": `url('${pfx}/belso3.jpg')`,
         "gallery-img-10": `url('${pfx}/belso4.jpg')`,
         "gallery-img-11": `url('${pfx}/belso5.jpg')`,
-        "gallery-img-12": `url('${pfx}/belso6.jpg')`,
-        "gallery-img-13": `url('${pfx}/belso7.jpg')`,
-        "gallery-img-14": `url('${pfx}/belso8.jpg')`,
-        "gallery-img-15": `url('${pfx}/belso9.jpg')`,
-        "gallery-img-16": `url('${pfx}/belso10.jpg')`,
-        "gallery-img-17": `url('${pfx}/belso11.jpg')`,
-        "gallery-img-18": `url('${pfx}/belso12.jpg')`,
 
         "guide-img-1": `url('${pfx}/mofetta.jpg')`,
         "guide-img-2": `url('${pfx}/siroki-var.jpg')`,

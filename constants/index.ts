@@ -50,6 +50,11 @@ export const GALLERY = [
     subtitle: "Autentikus paraszt tornác",
   },
   {
+    backgroundImage: "bg-gallery-img-5_3",
+    title: "Tornác",
+    subtitle: "Autentikus paraszt tornác",
+  },
+  {
     backgroundImage: "bg-gallery-img-6",
     title: "Tornác",
     subtitle: "Virágok ölelésében",
@@ -67,39 +72,7 @@ export const GALLERY = [
     title: "Belső, szoba",
   },
   {
-    backgroundImage: "bg-gallery-img-10",
-    title: "Belső, szoba",
-  },
-  {
     backgroundImage: "bg-gallery-img-11",
-    title: "Belső, szoba",
-  },
-  {
-    backgroundImage: "bg-gallery-img-12",
-    title: "Belső, szoba",
-  },
-  {
-    backgroundImage: "bg-gallery-img-13",
-    title: "Belső, szoba",
-  },
-  {
-    backgroundImage: "bg-gallery-img-14",
-    title: "Belső, konyha",
-  },
-  {
-    backgroundImage: "bg-gallery-img-15",
-    title: "Belső, konyha",
-  },
-  {
-    backgroundImage: "bg-gallery-img-16",
-    title: "Belső, fürdőszoba",
-  },
-  {
-    backgroundImage: "bg-gallery-img-17",
-    title: "Belső, szoba",
-  },
-  {
-    backgroundImage: "bg-gallery-img-18",
     title: "Belső, szoba",
   },
 ];
@@ -192,6 +165,12 @@ export const FEATURES = [
     variant: "orange",
     description:
       "Lehetőség van bográcsozásra, szalonnasütésre, melyhez minden eszközt biztosítani tudunk. (például: nyárs, fa)",
+  },
+  {
+    title: "Wifi",
+    icon: `${prefix}/wifi.png`,
+    variant: "green",
+    description: "Ingyen wifi használat",
   },
 ];
 

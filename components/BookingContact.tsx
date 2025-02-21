@@ -14,7 +14,7 @@ const BookingContact = () => {
         🏡 <strong>Nyitvatartás:</strong> Április 1 - Október 15
       </p>
       <p>
-        💰 <strong>Ár:</strong> 7000 Ft/fő/éj (IFA: 400 Ft/fő/éj)
+        💰 <strong>Ár:</strong> 6000 Ft/fő/éj (IFA: 400 Ft/fő/éj)
       </p>
     </div>
   );

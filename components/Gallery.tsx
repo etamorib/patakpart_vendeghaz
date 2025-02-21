@@ -50,14 +50,14 @@ const GaleryImages = ({ images }: ImageSliderProps) => {
                 functionality={openModal}
               />
             </div>
-            <div className="flex flex-col gap-1 bg-black bg-opacity-60 m-4 p-4 rounded-2xl">
+            {/*             <div className="flex flex-col gap-1 bg-black bg-opacity-60 m-4 p-4 rounded-2xl">
               <h4 className="bold-18 text-white">
                 {images[currentSlide].title}
               </h4>
               <p className="regular-14 text-white">
                 {images[currentSlide].subtitle}
               </p>
-            </div>
+            </div> */}
           </div>
           {/*TODO: move it to component */}
           <div className="flex items-center justify-between w-full">
@@ -96,7 +96,7 @@ const Gallery = () => {
   return (
     <>
       <div className="mt-10 mb-10 px-6 w-full">
-        <div className="relative w-full overflow-hidden rounded-3xl bg-green-90 p-8 xl:rounded-5xl xl:px-16 xl:py-20">
+        <div className="relative w-full overflow-hidden rounded-3xl bg-green-50 p-8 xl:rounded-5xl xl:px-16 xl:py-20">
           <h2 className="regular-24 md:regular-32 2xl:regular-50 capitalize text-white">
             <strong> Családok, párok, barátok</strong> számára ideális környezet
           </h2>
