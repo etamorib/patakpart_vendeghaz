@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav
       className={`navFlex max-container pl-10 pr-10 fixed z-50 py-5 flex items-center ${
-        fill && "bg-green-50"
+        fill && "bg_amber_400_gradient"
       }`}
     >
       {/* Logo (Aligned Left) */}
@@ -71,7 +71,7 @@ const Navbar = () => {
       </button>
       {/* Mobile Menu (Slide-in from Right) */}
       <div
-        className={`fixed top-0 right-0 min-h-screen w-1/2 h-full bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 min-h-screen w-1/2 h-full bg-amber-400 shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

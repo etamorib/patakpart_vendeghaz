@@ -34,7 +34,7 @@ const Hero = () => {
                 type="button"
                 title="Elhelyezkedés"
                 icon={`${prefix}/map.svg`}
-                variant="btn_green cursor-pointer btn_animation"
+                variant="btn_amber cursor-pointer btn_animation"
                 functionality={openInNewTab(EXTERNAL_LINKS.direction)}
               />
             </div>

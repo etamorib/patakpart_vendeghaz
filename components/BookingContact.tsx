@@ -2,7 +2,7 @@ import { CONTACT } from "@/constants";
 
 const BookingContact = () => {
   return (
-    <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+    <div className="p-6 bg_amber_400_gradient_booking rounded-lg shadow-2xl">
       <h2 className="text-2xl font-semibold mb-4">Foglalás és Kapcsolat</h2>
       <p>
         ☎️ <strong>Telefon:</strong> {CONTACT.tel}

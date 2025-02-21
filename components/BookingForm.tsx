@@ -29,7 +29,7 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="p-6 bg-gray-100 rounded-lg shadow-md">
+    <div className="p-6 bg_amber_400_gradient_booking rounded-lg shadow-2xl">
       <h2 className="text-2xl font-semibold mb-4">Foglalási Üzenet</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input

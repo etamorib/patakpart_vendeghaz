@@ -96,7 +96,7 @@ const Gallery = () => {
   return (
     <>
       <div className="mt-10 mb-10 px-6 w-full">
-        <div className="relative w-full overflow-hidden rounded-3xl bg-green-50 p-8 xl:rounded-5xl xl:px-16 xl:py-20">
+        <div className="relative w-full overflow-hidden rounded-3xl bg_amber_400_gradient p-8 xl:rounded-5xl xl:px-16 xl:py-20">
           <h2 className="regular-24 md:regular-32 2xl:regular-50 capitalize text-white">
             <strong> Családok, párok, barátok</strong> számára ideális környezet
           </h2>

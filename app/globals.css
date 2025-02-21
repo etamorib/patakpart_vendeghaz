@@ -73,6 +73,14 @@ body {
     );
   }
 
+  .bg_amber_400_gradient_booking {
+    background: linear-gradient(
+      to left,
+      rgb(251, 191, 36, 0.95) 75%,
+      transparent 100%
+    );
+  }
+
   .bg_green_90_gradient {
     background: linear-gradient(
       to top,
