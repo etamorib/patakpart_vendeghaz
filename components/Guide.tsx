@@ -65,7 +65,7 @@ const GuideSlide = ({ guides }: GuideSlideProps) => {
             <div className="flex w-full flex-col">
               <p className="regular-16 text-gray-20">Kezdőpont</p>
               <h4 className="bold-20 mt-2 whitespace-nowrap">
-                Patakpart Vendégház
+                Patakparti Vendégház
               </h4>
             </div>
           </div>

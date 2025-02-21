@@ -1,4 +1,4 @@
-let pfx = "";
+let pfx = "/patakpart_vendeghaz";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

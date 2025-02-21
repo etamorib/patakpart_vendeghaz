@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <h1 className="bold-40 lg:bold-60">
-          Patakpart vendégház Mátraderecske
+          Patakparti vendégház Mátraderecske
         </h1>
         <p className="regular-18 mt-6 text-green-90 xl:max-w-[520px]">
           A Mátra északi lábánál Mátraderecskén található vendégházunk. Egy

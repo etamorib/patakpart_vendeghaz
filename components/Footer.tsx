@@ -59,7 +59,7 @@ const Footer = () => {
 
         <div className="border bg-white" />
         <p className="regular-14 w-full text-center text-gray-700">
-          2024 Patakpart vendégház Mátraderecske | Minden jog fenntartva
+          2024 Patakparti vendégház Mátraderecske | Minden jog fenntartva
         </p>
         <p className="regular-14 w-full text-center text-gray-700">
           NTAK azonosító - MA23076543
