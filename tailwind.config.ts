@@ -1,4 +1,4 @@
-const pfx = "";
+const pfx = "/patakpart_vendeghaz";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
