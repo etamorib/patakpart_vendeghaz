@@ -16,6 +16,7 @@ html {
 
 body {
   font-family: Inter;
+  background: rgba(236, 230, 218, 255);
 }
 
 @layer utilities {
@@ -31,6 +32,21 @@ body {
 
   .btn_amber {
     @apply border-white bg-amber-400 px-8 py-5 text-white;
+  }
+
+  .btn_modern {
+    @apply border-white  px-8 py-5 text-black;
+    background-color: rgba(236, 230, 218, 255);
+  }
+
+  .btn_white {
+    @apply px-8 py-5 text-black;
+    background-color: rgba(255, 255, 255, 255);
+    border-color: rgba(34, 34, 34, 255);
+  }
+
+  .bg_modern_light {
+    background: rgba(236, 230, 218, 255);
   }
 
   .btn_dark_green {
@@ -79,6 +95,10 @@ body {
       rgb(251, 191, 36, 0.95) 75%,
       transparent 100%
     );
+  }
+
+  .bg_modern_dark {
+    background: rgba(34, 34, 34, 255);
   }
 
   .bg_green_90_gradient {
@@ -211,7 +231,7 @@ body {
   }
 
   .nav-item-dark {
-    @apply underline-nav text-green-90 hover:text-black after:bg-black;
+    @apply underline-nav text-white hover:text-white after:bg-white;
   }
 
   .nav-item-white {

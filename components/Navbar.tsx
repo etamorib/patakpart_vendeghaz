@@ -26,17 +26,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navFlex max-container pl-10 pr-10 fixed z-50 py-5 flex items-center ${
-        fill && "bg_amber_400_gradient"
+      className={`navFlex max-container pl-10 pr-10 fixed z-50 py-5 flex items-center bg_modern_dark ${
+        fill && "bg_modern_dark"
       }`}
     >
       {/* Logo (Aligned Left) */}
       <Link href="/">
         <Image
-          src={`${prefix}/start.png`}
+          src={`${prefix}/logo.svg`}
           alt="logo"
-          width={74}
-          height={29}
+          width={90}
+          height={12}
           className="cursor-pointer"
         />
       </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
       </button>
       {/* Mobile Menu (Slide-in from Right) */}
       <div
-        className={`fixed top-0 right-0 min-h-screen w-1/2 h-full bg-amber-400 shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 min-h-screen w-1/2 h-full bg_modern_dark shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

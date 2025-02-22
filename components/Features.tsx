@@ -9,7 +9,7 @@ const Features = () => {
         {/* Left Side - Text Section */}
         <div className="z-20 w-full lg:w-[40%] flex flex-col items-start text-left mr-10">
           <h2 className="bold-40 lg:bold-64">Részletek a szállásról</h2>
-          <p className="text-2xl text-justify regular-16 mt-5 bg-white/50 text-gray-30 lg:mt-[30px] lg:bg-none">
+          <p className="text-2xl justify-evenly regular-16 mt-5  text-gray-30 lg:mt-[30px] lg:bg-none">
             <b>Mátraderecske</b> Budapesttől 125 km-re, a történelmi diákváros
             Egertől 30 km-re, Bükkszéktől 20 km-re, Heves megyében a Mátra
             északi lábánál található, közkedvelt kirándulóhely és
@@ -17,13 +17,13 @@ const Features = () => {
             utak, tiszta levegő, túraútvonalak, természeti kincsekben gazdag
             környék. Mátraderecskén található hazánk egyedülálló természeti
             gyógyhelye a ✅{" "}
-            <b>MÁTRADERECSKEI SZÉNDIOXID GYÓGYGÁZFÜRDŐ a MOFETTA </b>
-            amely 54 fajta betegséget gyógyít. A közelben túraútvonalak,
+            <b>MÁTRADERECSKEI SZÉNDIOXID GYÓGYGÁZFÜRDŐ a MOFETTA </b> amely 54
+            fajta betegséget gyógyít. A közelben túraútvonalak,
             látványosságokban gazdag kirándulási lehetőségek pl. siroki vár,
             markazi várrom, Kanázsvár romjai, Recski Nemzeti Emlékpark, Rákóczi
             fa, egri vár, Bükkszék, Kékestető, Parádfürdő, Egerszalók és Demjén
           </p>
-          <ul className="mt-6 space-y-4 text-2xl text-justify regular-16  bg-white/50 text-gray-30 lg:mt-[30px] lg:bg-none">
+          <ul className="mt-6 space-y-4 text-2xl text-justify regular-16   text-gray-30 lg:mt-[30px] lg:bg-none">
             <li className="flex items-center gap-2">
               👨‍👩‍👧‍👦 <span>Tökéletes idő családdal vagy párban</span>
             </li>
@@ -76,7 +76,7 @@ const FeatureItem = ({ title, icon, description }: FeatureItem) => {
         <Image src={icon} alt={title} width={28} height={28} />
       </div>
       <h2 className="bold-20 lg:bold-32 mt-5 capitalize">{title}</h2>
-      <p className="regular-16 mt-5 bg-white/50 text-gray-30 lg:mt-[30px] lg:bg-none">
+      <p className="regular-16 mt-5  text-gray-30 lg:mt-[30px] lg:bg-none">
         {description}
       </p>
     </li>

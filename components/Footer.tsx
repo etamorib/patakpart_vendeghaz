@@ -5,13 +5,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter pb-5 pt-3 bg_green_90_gradient text-black">
+    <footer className="flexCenter pb-5 pt-3 bg_modern_dark text-white">
       <div className="padding-container max-container flex w-full flex-col gap-8">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <div className="flex flex-wrap gap-10 sm:justify-between ">
             {FOOTER_LINKS.map((columns) => (
               <FooterColumn title={columns.title}>
-                <ul className="regular-14 flex flex-col gap-1 text-black">
+                <ul className="regular-14 flex flex-col gap-1 text-white">
                   {columns.links.map((link) => (
                     <Link href={link.map} key={link.address} target="_blank">
                       {link.address}
@@ -24,23 +24,19 @@ const Footer = () => {
             <div className="flex flex-col gap-5">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
                 {FOOTER_CONTACT_INFO.links.map((link, index) => (
-                  <Link
-                    href="/"
-                    key={index}
-                    className="flex gap-4 md:flex-col lg:flex-row"
-                  >
+                  <div className="flex gap-4 md:flex-col lg:flex-row">
                     <p className="whitespace-nowrap">{link.label}:</p>
-                    <p className="medium-14 whitespace-nowrap text-black">
+                    <p className="medium-14 whitespace-nowrap text-white">
                       {link.value}
                     </p>
-                  </Link>
+                  </div>
                 ))}
               </FooterColumn>
             </div>
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
-                <ul className="regular-14 flex gap-4 text-black">
+                <ul className="regular-14 flex gap-4 text-gray-20">
                   {SOCIALS.links.map((link) => (
                     <Link href={link.url} key={link.image} target="_blank">
                       <Image
@@ -58,10 +54,10 @@ const Footer = () => {
         </div>
 
         <div className="border bg-white" />
-        <p className="regular-14 w-full text-center text-gray-700">
+        <p className="regular-14 w-full text-center text-gray-400">
           2024 Patakparti vendégház Mátraderecske | Minden jog fenntartva
         </p>
-        <p className="regular-14 w-full text-center text-gray-700">
+        <p className="regular-14 w-full text-center text-gray-400">
           NTAK azonosító - MA23076543
         </p>
       </div>

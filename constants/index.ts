@@ -75,6 +75,14 @@ export const GALLERY = [
     backgroundImage: "bg-gallery-img-11",
     title: "Belső, szoba",
   },
+  {
+    backgroundImage: "bg-gallery-img-12 ",
+    title: "Belső, szoba",
+  },
+  {
+    backgroundImage: "bg-gallery-img-13 ",
+    title: "Belső, szoba",
+  },
 ];
 
 //GUIDE SECTION

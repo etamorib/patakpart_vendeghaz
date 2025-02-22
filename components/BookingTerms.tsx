@@ -1,6 +1,6 @@
 const BookingTerms = () => {
   return (
-    <div className="p-6 bg_amber_400_gradient_booking rounded-lg shadow-2xl">
+    <div className="p-6 bg-white rounded-lg shadow-2xl">
       <h2 className="text-2xl font-semibold mb-4">Foglalási feltételek</h2>
       <ul className="list-disc pl-5 space-y-2">
         <li>Minimum 3 éjszaka foglalható!</li>

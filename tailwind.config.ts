@@ -1,4 +1,4 @@
-let pfx = "/patakpart_vendeghaz";
+const pfx = "";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -45,6 +45,8 @@ module.exports = {
         "gallery-img-9": `url('${pfx}/belso3.jpg')`,
         "gallery-img-10": `url('${pfx}/belso4.jpg')`,
         "gallery-img-11": `url('${pfx}/belso5.jpg')`,
+        "gallery-img-12": `url('${pfx}/belso7.jpg')`,
+        "gallery-img-13": `url('${pfx}/belso8.jpg')`,
 
         "guide-img-1": `url('${pfx}/mofetta.jpg')`,
         "guide-img-2": `url('${pfx}/siroki-var.jpg')`,
@@ -56,7 +58,7 @@ module.exports = {
         "guide-img-8": `url('${pfx}/oxygen.jpg')`,
 
         "bg-img-2": `url('${pfx}/img-2.png')`,
-        "feature-bg": `url('${pfx}/feature-bg.png')`,
+        "feature-bg": `url('${pfx}/feature-bg.svg')`,
         pattern: `url('${pfx}/pattern.png')`,
         "pattern-2": `linear-gradient(to right, rgba(255, 255, 255, 1.0) 5%, transparent 30%), linear-gradient(to bottom, rgba(255, 255, 255, 1.0) 10%, transparent 90%), linear-gradient(to top, rgba(255, 255, 255, 0.2) 1%, transparent 15%), url('${pfx}/udvar1.jpg')`,
       },
